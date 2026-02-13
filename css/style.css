@@ -35,7 +35,7 @@ li , ul {
 }
 
 section:not(.hero-section) { 
-  padding: 50px;
+  padding: 75px 40px;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -74,13 +74,17 @@ body {
   width: 100%;
   background-position: top;
   background-size: cover;
-  height: 80vh;
+  height: 80dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 1em;
+}
+
+.hero__container { 
+  max-width: 700px;
 }
 
 
@@ -105,8 +109,16 @@ body {
   background-color: var(--Green-500);
 }
 
+.buttons-mac:hover { 
+  background-color: hsla(171, 66%, 44%, 0.8);
+}
+
 .buttons-ios { 
   background-color: var(--Blue-100);
+}
+
+.buttons-ios:hover { 
+  background-color: hsla(233, 100%, 69%, 0.8);
 }
 
 .buttons { 
@@ -114,30 +126,256 @@ body {
   color: #ffffff;
   font-weight: bold;
   border: none;
-  padding: .75em 1.5em;
+  padding: .75em 2em;
   border-radius: 999px;
-  margin-bottom: 1em;
   cursor: pointer;
+  margin: .75rem 0;
 }
+
+
 
 .buttons-contianer { 
   display: flex; 
   flex-direction: column;
   padding: 1em;
+  max-width: fit-content;
+  margin: 0 auto;
+}
+
+.clipboard__title { 
+  margin-bottom: .5em;
+  color: var(--Gray-700);
+  font-size: 26px;
+}
+
+.clipboard__description { 
+  margin-bottom: 1em;
+  color: var(--Gray-500);
+}
+
+.clipboard__header--text { 
+  text-align: center;
+  margin: 3rem auto;
+}
+
+.clipboard__content { 
+  display: flex;
+  gap: 5em;
+  flex-direction: column;
+}
+
+.clipboard__content__item { 
+  text-align: center;
+  margin-bottom: 1em;
 }
 
 
-@media (min-width: 600px) { 
+.clipboard__content__item--title { 
+  color: var(--Gray-700);
+  margin-bottom: .5em;
+  font-size: 24px;
+}
+
+.clipboard__content__item--description { 
+  color: var(--Gray-500);
+}
+
+.access__header--text  { 
+  text-align: center;
+  margin: 4em auto;
+}
+
+.access__title { 
+  color: var(--Gray-700);
+  margin-bottom: .7em;
+}
+
+.access__description { 
+  color: var(--Gray-500);
+}
+
+.access__section--img { 
+  margin: 0 auto;
+}
+
+.workflow__title { 
+  font-size: 24px;
+  margin-bottom: .5em;
+  color: var(--Gray-700);
+  text-align: center;
+}
+
+.workflow__description { 
+  color: var(--Gray-500);
+  text-align: center;
+}
+
+.workflow__items { 
+  margin: 2em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.workflow__item { 
+  margin: 1em 0;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.workflow__item--header { 
+  font-size: 23px;
+  color: var(--Gray-700);
+}
+
+.workflow__item__description { 
+  color: var(--Gray-500);
+}
+
+.partners__section { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.end-cta__container{ 
+  max-width: 650px;
+  margin: 0 auto;
+}
+.end-cta__title { 
+  text-align: center;
+  margin-bottom: .75em;
+  color: var(--Gray-700);
+}
+
+.end-cta__description { 
+  text-align: center;
+  color: var(--Gray-500);
+}
+
+footer { 
+  margin-top: 100px;
+  padding: 50px;
+  background-color: hsla(201, 11%, 66%, 0.4);
+}
+
+.footer-container { 
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer img { 
+  width: 50px;
+}
+
+footer ul { 
+  list-style: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+footer li { 
+  font-size: 18px;
+  margin: 1rem 0;
+  color: var(--Gray-700);
+}
+
+i { 
+  color: var(--Gray-700);
+  font-size: 30px;
+}
+
+i:hover { 
+  color: var(--Green-500);
+}
+
+.footer__icons { 
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+
+
+footer li:hover { 
+  color: var(--Green-500);
+}
+
+@media (min-width: 850px) { 
   .hero-section { 
     background-image: url("../images/bg-header-desktop.png");
   }
+
   .hero__container { 
     max-width: 550px;
   }
+
   .buttons-contianer { 
     flex-direction: row;
     gap: 1em;
     justify-content: center;
+  }
+
+  .clipboard__header--text { 
+     width: 47%;
+     text-align: center;
+  }
+
+  .clipboard__img { 
+    width: 60%;
+    object-fit: contain;
+  }
+
+  .clipboard__content { 
+    gap: 3em;
+    flex-direction: row;
+  }
+
+  .clipboard__content__items { 
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 1em;
+  }
+
+  .clipboard__content__item { 
+    text-align: left;
+    max-width: 350px;
+  }
+
+  .access__header--text { 
+    max-width: 630px;
+  }
+
+  .workflow__items { 
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+  } 
+
+  .workflow__item { 
+    flex-basis: 350px;
+  }
+
+  .partners__section { 
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+
+  .footer-container { 
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 

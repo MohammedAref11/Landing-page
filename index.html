@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="preload" href="/fonts/BaiJamjuree-Regular.woff2" crossorigin="anonymous" as="font" type="font/woff2">
   <link rel="preload" href="/fonts/BaiJamjuree-SemiBold.woff2" crossorigin="anonymous" as="font" type="font/woff2">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-
   <main>
     <section class="hero-section">
       <div class="hero__container">
@@ -23,30 +23,104 @@
         </div>
       </div>
     </section>
-
-    <section>
-      <h2>Access Clipboard any where</h2>
-      <p>Clipboard instantly stores any item you copy in the cloud, 
-          meaning you can access your snippets immediately on all your 
-          devices. Our Mac and iOS apps will help you organize everything.</p>
-    
-    <div style="display: flex; justify-content: space-between; gap: 2em;">
-      <img src="./images/image-computer.png" width="50%">
-      <div>
-        <h3>Quick Search</h3>
-        <p>Easily search your snippets by content, category, web address, application, and more.</p>
-
-        <h3>iCloud Sync</h3>
-        <p>Instantly saves and syncs snippets across all your devices.</p>
-
-        <h3>Complete History</h3>
-        <p>Retrieve any snippets from the first moment you started using the app.</p>
+    <section class="clipboard-section">
+      <div class="clipboard__header--text">
+        <h2 class="clipboard__title">Keep track of your snippets</h2>
+        <p class="clipboard__description">Clipboard instantly stores any item you copy in the cloud,
+            meaning you can access your snippets immediately on all your
+            devices. Our Mac and iOS apps will help you organize everything.
+        </p>
+      </div>
+    <div class="clipboard__content">
+      <img class="clipboard__img" src="./images/image-computer.png">
+      <div class="clipboard__content__items">
+        <div class="clipboard__content__item">
+          <h3 class="clipboard__content__item--title">Quick Search</h3>
+          <p class="clipboard__content__item--description">Easily search your snippets by content, category, web address, application, and more.</p>
+        </div>
+        <div class="clipboard__content__item">
+          <h3 class="clipboard__content__item--title">iCloud Sync</h3>
+          <p class="clipboard__content__item--description">Instantly saves and syncs snippets across all your devices.</p>
+        </div>
+        <div class="clipboard__content__item">
+          <h3 class="clipboard__content__item--title">Complete History</h3>
+          <p class="clipboard__content__item--description">Retrieve any snippets from the first moment you started using the app.</p>
+        </div>
       </div>
     </div>
   </section>
+  <section class="access__section">
+    <div class="access__header--text">
+      <h2 class="access__title">Access Clipboard anywhere</h2>
+      <p class="access__description">
+        Whether you're on teh go, or at your computer, you can
+        access all your Clipboard snippets in a few simple clicks.
+      </p>
+    </div>
+    <img class="access__section--img" src="./images/image-devices.png" alt="">
+  </section>
+  <section class="workflow__section">
+    <h2 class="workflow__title">Supercharge your workflow</h2>
+    <p class="workflow__description">We've got the tools to boost your productivity</p>
+    <div class="workflow__items">
+      <div class="workflow__item">
+        <img class="workflow__item-img" src="./images/icon-blacklist.svg" alt="">
+        <h3 class="workflow__item--header">Create blacklists</h3>
+        <p class="workflow__description">Ensure sinsitive information never makes its way to your clipboard by excluding certain sources.</p>
+      </div>
+      <div class="workflow__item">
+        <img class="workflow__item-img" src="./images/icon-text.svg" alt="">
+        <h3 class="workflow__item--header">Pain text snippets</h3>
+        <p class="workflow__description">Remove unwanted formatting from copied text for a consistent look.</p>
+      </div>
+      <div class="workflow__item">
+        <img class="workflow__item-img" src="./images/icon-preview.svg" alt="">
+        <h3 class="workflow__item--header">Sneak preview</h3>
+        <p class="workflow__item__description">Quick preview of all snippets on your clipboard for easy access</p>
+      </div>
+    </div>
+  </section>
+  <section class="partners__section">
+    <img src="./images/logo-google.png" alt="">
+    <img src="./images/logo-ibm.png" alt="">
+    <img src="./images/logo-microsoft.png" alt="">
+    <img src="./images/logo-hp.png" alt="">
+    <img src="./images/logo-vector-graphics.png" alt="">
+  </section>
+  <section class="end-cta__section">
+    <div class="end-cta__container">
+      <h2 class="end-cta__title">Clipboard for iOS and Mac OS</h2>
+      <p class="end-cta__description">Available for free on the App Store. Download for Mac and iOS, sync with iClould and
+        you're ready to start adding to your clipboard
+      </p>
+        <div class="buttons-contianer">
+            <button class="buttons-ios buttons">Download for iOS</button>
+            <button class="buttons-mac buttons">Download for Mac</button>
+        </div>
+    </div>
+  </section>
   </main>
-
-  
+  <footer>
+    <div class="footer-container">
+      <img src="./images/logo.svg" alt="">
+      <ul>
+        <li>FAQ</li>
+        <li>Contact Us</li>
+      </ul>
+      <ul>
+        <li>Privacy Policy</li>
+        <li>Press Kit</li>
+      </ul>
+      <ul>
+        <li>Install Guide</li>
+      </ul>
+      <div class="footer__icons">
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </div>
+  </footer>
   
 
 </body>
