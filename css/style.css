@@ -132,8 +132,6 @@ body {
   margin: .75rem 0;
 }
 
-
-
 .buttons-contianer { 
   display: flex; 
   flex-direction: column;
@@ -168,7 +166,6 @@ body {
   text-align: center;
   margin-bottom: 1em;
 }
-
 
 .clipboard__content__item--title { 
   color: var(--Gray-700);
@@ -305,7 +302,6 @@ i:hover {
 }
 
 
-
 footer li:hover { 
   color: var(--Green-500);
 }
@@ -378,14 +374,3 @@ footer li:hover {
     justify-content: space-between;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
