@@ -29,6 +29,17 @@ p {
   font-family: "BaiJamjuree-Regular";
 }
 
+li , ul { 
+  padding: 0;
+  margin: 0;
+}
+
+section:not(.hero-section) { 
+  padding: 50px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 :root { 
 
   /* Primary */
@@ -54,7 +65,81 @@ p {
   font-display: swap;
 }
 
+body { 
+  font-family: "BaiJamjuree-Regular";
+}
 
+.hero-section { 
+  background-image: url("../images/bg-header-mobile.png");
+  width: 100%;
+  background-position: top;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1em;
+}
+
+
+.hero__logo { 
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+.hero__header { 
+  color: var(--Gray-700); 
+  font-size: 33px;
+  margin-bottom: 0.5em;
+}
+
+.hero__description { 
+  color: var(--Gray-500);
+  line-height: 1.4;
+  margin-bottom: 1em;
+}
+
+.buttons-mac { 
+  background-color: var(--Green-500);
+}
+
+.buttons-ios { 
+  background-color: var(--Blue-100);
+}
+
+.buttons { 
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  padding: .75em 1.5em;
+  border-radius: 999px;
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+
+.buttons-contianer { 
+  display: flex; 
+  flex-direction: column;
+  padding: 1em;
+}
+
+
+@media (min-width: 600px) { 
+  .hero-section { 
+    background-image: url("../images/bg-header-desktop.png");
+  }
+  .hero__container { 
+    max-width: 550px;
+  }
+  .buttons-contianer { 
+    flex-direction: row;
+    gap: 1em;
+    justify-content: center;
+  }
+}
 
 
 
